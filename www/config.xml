@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.aprendendo.croche" version="0.0.1" versionCode = "0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <preference name="AllowInlineMediaPlayback" value="false" />
+    <preference name="AutoHideSplashScreen" value="true" />
+    <preference name="BackupWebStorage" value="cloud" />
+    <preference name="DisallowOverscroll" value="false" />
+    <preference name="EnableViewportScale" value="false" />
+    <preference name="FadeSplashScreen" value="true" />
+    <preference name="FadeSplashScreenDuration" value=".25" />
+    <preference name="KeyboardDisplayRequiresUserAction" value="true" />
+    <preference name="MediaPlaybackRequiresUserAction" value="false" />
+    <preference name="ShowSplashScreenSpinner" value="true" />
+    <preference name="SuppressesIncrementalRendering" value="false" />
+    <preference name="TopActivityIndicator" value="gray" />
+    <preference name="GapBetweenPages" value="0" />
+    <preference name="PageLength" value="0" />
+    <preference name="PaginationBreakingMode" value="page" />
+    <preference name="PaginationMode" value="unpaginated" />
+    <feature name="LocalStorage">
+        <param name="ios-package" value="CDVLocalStorage" />
+    </feature>
+    <name>Aprendendo Crochê</name>
+    <description>
+        Venha aprender crochê com nossas vídeo aulas online!
+    </description>
+    <author email="ac@aprendendocroche.com" href="http://aprendendocroche.com">
+        Aprendendo Crochê - www.aprendendocroche.com
+    </author>
+    <content src="http://aprendendocroche.com/mobile/index.asp?apk=ios" />
+    <access origin="*" subdomains="true" />
+    <feature name="NetworkStatus">
+        <param name="ios-package" value="CDVConnection" />
+    </feature>
+    <feature name="Notification">
+        <param name="ios-package" value="CDVNotification" />
+    </feature>
+    <feature name="Vibration">
+        <param name="ios-package" value="CDVVibration" />
+    </feature>
+    <feature name="SplashScreen">
+        <param name="ios-package" value="CDVSplashScreen" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="InAppBrowser">
+        <param name="ios-package" value="CDVInAppBrowser" />
+    </feature>
+    <feature name="Console">
+        <param name="ios-package" value="CDVLogger" />
+    </feature>
+	
+	<gap:platform name="ios" />
+	
+    <gap:plugin name="org.apache.cordova.console" />
+    <gap:plugin name="org.apache.cordova.dialogs" />
+    <gap:plugin name="org.apache.cordova.inappbrowser" />
+    <gap:plugin name="org.apache.cordova.network-information" />
+    <gap:plugin name="org.apache.cordova.splashscreen" />
+    <gap:plugin name="org.apache.cordova.vibration" />	
+	
+	icon src="icon.png" />
+	<icon src="icons/icon-small.png"            gap:platform="ios"        width="29" height="29" />
+	<icon src="icons/icon-40.png"            gap:platform="ios"        width="40" height="40" />
+	<icon src="icons/icon.png"            gap:platform="ios"        width="57" height="57" />
+	<icon src="icons/icon.png"            gap:platform="ios"        width="58" height="58" />
+    <icon src="icons/icon-60.png"            gap:platform="ios"        width="60" height="60" />
+	<icon src="icons/icon-72.png"            gap:platform="ios"        width="72" height="72" />
+	<icon src="icons/icon-76.png"            gap:platform="ios"        width="76" height="76" />
+    <icon src="icons/icon-40@2x.png"            gap:platform="ios"        width="80" height="80" />
+    <icon src="icons/icon@2x.png"         gap:platform="ios"        width="114" height="114" />
+	<icon src="icons/icon-60@2x.png"         gap:platform="ios"        width="120" height="120" />
+    <icon src="icons/icon-72@2x.png"         gap:platform="ios"        width="144" height="144" />
+    <icon src="icons/icon-76@2x.png"         gap:platform="ios"        width="152" height="152" />
+	
+	<gap:splash src="splash/Default~iphone.png"         gap:platform="ios"     width="320" height="480" />
+    <gap:splash src="splash/Default@2x~iphone.png"      gap:platform="ios"     width="640" height="960" />
+    <gap:splash src="splash/Default-568h@2x~iphone.png" gap:platform="ios"     width="640" height="1136" />
+    <gap:splash src="splash/Default-Portrait~ipad.png"           gap:platform="ios"     width="768" height="1024" />
+    <gap:splash src="splash/Default-Landscape~ipad.png"          gap:platform="ios"     width="1024" height="768" />	
+    <gap:splash src="splash/Default-Portrait@2x~ipad.png"          gap:platform="ios"     width="1536" height="2008" />	
+    <gap:splash src="splash/Default-Landscape@2x~ipad.png"          gap:platform="ios"     width="2048" height="1496" />	
+</widget>
