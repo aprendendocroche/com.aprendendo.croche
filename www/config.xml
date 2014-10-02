@@ -90,6 +90,21 @@
     <icon src="icons/icon-72@2x.png"         gap:platform="ios"        width="144" height="144" />
     <icon src="icons/icon-76@2x.png"         gap:platform="ios"        width="152" height="152" />
 	
+	<icon src="icons/icon.png"   gap:platform="android"    gap:qualifier="ldpi" />
+    <icon src="icons/icon-40@2x.png"   gap:platform="android"    gap:qualifier="mdpi" />
+    <icon src="icons/icon-72@2x.png"   gap:platform="android"    gap:qualifier="hdpi" />
+    <icon src="icons/icon-76@2x.png"  gap:platform="android"    gap:qualifier="xhdpi" />
+	
+	<icon src="icons/icon-57.png"  gap:platform="winphone" />
+    <icon src="icons/icon-76@2x.png" gap:platform="winphone"   gap:role="background" />		
+	
+	<gap:splash src="splash/Default~iphone.png"       gap:platform="android" gap:qualifier="port-ldpi" />
+    <gap:splash src="splash/Default@2x~iphone.png"       gap:platform="android" gap:qualifier="port-mdpi" />
+    <gap:splash src="splash/Default-Portrait~ipad.png"       gap:platform="android" gap:qualifier="port-hdpi" />
+    <gap:splash src="splash/Default-Landscape~ipad.png"      gap:platform="android" gap:qualifier="port-xhdpi" />
+	
+	<gap:splash src="splash/Default@2x~iphone.png"      gap:platform="winphone" />
+	
 	<gap:splash src="splash/Default~iphone.png"         gap:platform="ios"     width="320" height="480" />
     <gap:splash src="splash/Default@2x~iphone.png"      gap:platform="ios"     width="640" height="960" />
     <gap:splash src="splash/Default-568h@2x~iphone.png" gap:platform="ios"     width="640" height="1136" />
