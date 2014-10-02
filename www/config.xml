@@ -1,5 +1,8 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.aprendendo.croche" version="0.0.1" versionCode = "0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="com.ac.ac" version="1.0.0" versionCode = "1.0.0" xmlns="http://www.w3.org/ns/widgets"
+xmlns:gap   = "http://phonegap.com/ns/1.0"
+xmlns:android   = "http://schemas.android.com/apk/res/android"
+>
     <preference name="AllowInlineMediaPlayback" value="false" />
     <preference name="AutoHideSplashScreen" value="true" />
     <preference name="BackupWebStorage" value="cloud" />
