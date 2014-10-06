@@ -1,24 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.ac.ac" version="1.0.0" versionCode = "1.0.0" xmlns="http://www.w3.org/ns/widgets"
-xmlns:gap   = "http://phonegap.com/ns/1.0"
-xmlns:android   = "http://schemas.android.com/apk/res/android"
->
-    <preference name="AllowInlineMediaPlayback" value="false" />
-    <preference name="AutoHideSplashScreen" value="true" />
-    <preference name="BackupWebStorage" value="cloud" />
-    <preference name="DisallowOverscroll" value="false" />
-    <preference name="EnableViewportScale" value="false" />
-    <preference name="FadeSplashScreen" value="true" />
-    <preference name="FadeSplashScreenDuration" value=".25" />
-    <preference name="KeyboardDisplayRequiresUserAction" value="true" />
-    <preference name="MediaPlaybackRequiresUserAction" value="false" />
-    <preference name="ShowSplashScreenSpinner" value="true" />
-    <preference name="SuppressesIncrementalRendering" value="false" />
-    <preference name="TopActivityIndicator" value="gray" />
-    <preference name="GapBetweenPages" value="0" />
-    <preference name="PageLength" value="0" />
-    <preference name="PaginationBreakingMode" value="page" />
-    <preference name="PaginationMode" value="unpaginated" />
+<widget id="com.aprendendo.croche" version="0.0.1" versionCode = "0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
 	
 	<preference name="phonegap-version"           value="3.5.0" />          <!-- all: current version of PhoneGap -->
     <preference name="orientation"                value="default" />        <!-- all: default means both landscape and portrait are enabled -->
@@ -32,13 +13,9 @@ xmlns:android   = "http://schemas.android.com/apk/res/android"
     <preference name="exit-on-suspend"            value="false" />          <!-- ios: if set to true, app will terminate when home button is pressed -->
     <preference name="show-splash-screen-spinner" value="true" />           <!-- ios: if set to false, the spinner won't appear on the splash screen during app loading -->
     <preference name="auto-hide-splash-screen"    value="true" />           <!-- ios: if set to false, the splash screen must be hidden using a JavaScript API -->
-    <preference name="disable-cursor"             value="false" />          <!-- blackberry: prevents a mouse-icon/cursor from being displayed on the app -->
-    <preference name="android-minSdkVersion"      value="7" />              <!-- android: MIN SDK version supported on the target device. MAX version is blank by default. -->
-    <preference name="android-installLocation"    value="auto" />           <!-- android: app install location. 'auto' will choose. 'internalOnly' is device memory. 'preferExternal' is SDCard. -->	
+
+	<gap:platform name="ios" />
 	
-    <feature name="LocalStorage">
-        <param name="ios-package" value="CDVLocalStorage" />
-    </feature>
     <name>Aprendendo Crochê</name>
     <description>
         Venha aprender crochê com nossas vídeo aulas online!
@@ -48,29 +25,6 @@ xmlns:android   = "http://schemas.android.com/apk/res/android"
     </author>
     <content src="http://aprendendocroche.com/mobile/index.asp?apk=ios" />
     <access origin="*" subdomains="true" />
-    <feature name="NetworkStatus">
-        <param name="ios-package" value="CDVConnection" />
-    </feature>
-	<!--
-    <feature name="Notification">
-        <param name="ios-package" value="CDVNotification" />
-    </feature>
-	-->
-    <feature name="Vibration">
-        <param name="ios-package" value="CDVVibration" />
-    </feature>
-    <feature name="SplashScreen">
-        <param name="ios-package" value="CDVSplashScreen" />
-        <param name="onload" value="true" />
-    </feature>
-    <feature name="InAppBrowser">
-        <param name="ios-package" value="CDVInAppBrowser" />
-    </feature>
-    <feature name="Console">
-        <param name="ios-package" value="CDVLogger" />
-    </feature>
-	
-	
 	
     <gap:plugin name="org.apache.cordova.console" />
     <gap:plugin name="org.apache.cordova.dialogs" />
@@ -92,21 +46,6 @@ xmlns:android   = "http://schemas.android.com/apk/res/android"
 	<icon src="icons/icon-60@2x.png"         gap:platform="ios"        width="120" height="120" />
     <icon src="icons/icon-72@2x.png"         gap:platform="ios"        width="144" height="144" />
     <icon src="icons/icon-76@2x.png"         gap:platform="ios"        width="152" height="152" />
-	
-	<icon src="icons/icon.png"   gap:platform="android"    gap:qualifier="ldpi" />
-    <icon src="icons/icon-40@2x.png"   gap:platform="android"    gap:qualifier="mdpi" />
-    <icon src="icons/icon-72@2x.png"   gap:platform="android"    gap:qualifier="hdpi" />
-    <icon src="icons/icon-76@2x.png"  gap:platform="android"    gap:qualifier="xhdpi" />
-	
-	<icon src="icons/icon-57.png"  gap:platform="winphone" />
-    <icon src="icons/icon-76@2x.png" gap:platform="winphone"   gap:role="background" />		
-	
-	<gap:splash src="splash/Default~iphone.png"       gap:platform="android" gap:qualifier="port-ldpi" />
-    <gap:splash src="splash/Default@2x~iphone.png"       gap:platform="android" gap:qualifier="port-mdpi" />
-    <gap:splash src="splash/Default-Portrait~ipad.png"       gap:platform="android" gap:qualifier="port-hdpi" />
-    <gap:splash src="splash/Default-Landscape~ipad.png"      gap:platform="android" gap:qualifier="port-xhdpi" />
-	
-	<gap:splash src="splash/Default@2x~iphone.png"      gap:platform="winphone" />
 	
 	<gap:splash src="splash/Default~iphone.png"         gap:platform="ios"     width="320" height="480" />
     <gap:splash src="splash/Default@2x~iphone.png"      gap:platform="ios"     width="640" height="960" />
